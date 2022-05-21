@@ -1,11 +1,11 @@
 
 <div class="sidebar-wrapper">
     <div class="logo">
-        <a href="http://www.creative-tim.com" class="simple-text">
-            <div class="logo-img">
-                <img src="/assets/img/angular2-logo-white.png"/>
+        <a href="#" class="simple-text">
+            <div class="logo-img" style="text-align: center;">
+                <img style="margin-left: -22px;width: 48px;"src="/assets/img/maps/aaa.png"/>
             </div>
-            Creative Tim
+           <span>Creative Tim</span> 
         </a>
     </div>
     <ul class="nav responsive-nav">
@@ -70,7 +70,11 @@
         <li class="separator hidden-lg hidden-md" *ngIf="isMobileMenu()"></li>
         <li routerLinkActive="active" *ngFor="let menuItem of menuItems" class="{{menuItem.class}}">
             <a  [routerLink]="[menuItem.path]">
-                <i class="{{menuItem.icon}}"></i>
+                <i style="margin: 0;
+                position: absolute;
+                top: 50%;
+                
+                transform: translateY(-50%);"class="{{menuItem.icon}}"></i>
                 <p>{{menuItem.title}}</p>
             </a>
         </li>
