@@ -17,5 +17,6 @@ export const AdminLayoutRoutes: Routes = [
     { path: 'AichouchaRaoued',     component: TypographyComponent },
     { path: 'amenagement',          component: IconsComponent },
     { path: 'LocalisationQuartier',           component: MapsComponent },
-    { path: 'upgrade',        component: UpgradeComponent },
+    { path: 'Delimitation',           component: DonneesAmenagementComponent },
+    { path: 'Raoued',        component: UpgradeComponent },
 ];
