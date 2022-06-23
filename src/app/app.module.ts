@@ -13,7 +13,10 @@ import { AppComponent } from './app.component';
 
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
 import { DonneesAmenagementComponent } from './donnees-amenagement/donnees-amenagement.component';
-
+import {VgCoreModule} from '@videogular/ngx-videogular/core';
+import {VgControlsModule} from '@videogular/ngx-videogular/controls';
+import {VgBufferingModule} from '@videogular/ngx-videogular/buffering';
+import {VgOverlayPlayModule} from '@videogular/ngx-videogular/overlay-play';
 @NgModule({
   imports: [
     BrowserAnimationsModule,
@@ -23,7 +26,11 @@ import { DonneesAmenagementComponent } from './donnees-amenagement/donnees-amena
     NavbarModule,
     FooterModule,
     SidebarModule,
-    AppRoutingModule
+    AppRoutingModule,
+    VgCoreModule,
+    VgControlsModule,
+    VgOverlayPlayModule,
+    VgBufferingModule
   ],
   declarations: [
     AppComponent,
